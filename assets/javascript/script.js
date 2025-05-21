@@ -140,11 +140,11 @@
         // email send function
         function sendMail(){
             let parms = {
-            name : document.getElementById("name").valueOf,
-            email : document.getElementById("email").valueOf,
-            subject : document.getElementById("subject").valueOf,
-            message : document.getElementById("message").valueOf,
+            name : document.getElementById("name").value,
+            email : document.getElementById("email").value,
+            subject : document.getElementById("subject").value,
+            message : document.getElementById("message").value,
 
             }
-            emailjs.send("service_k9vxeov","template_h377ogj",parms)
+            emailjs.send("service_k9vxeov","template_34c0ffm",parms)
         }
