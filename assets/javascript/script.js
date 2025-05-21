@@ -135,3 +135,16 @@
         // Check on scroll and initial load
         window.addEventListener('scroll', checkScroll);
         window.addEventListener('load', checkScroll);
+
+
+        // email send function
+        function sendMail(){
+            let parms = {
+            name : document.getElementById("name").valueOf,
+            email : document.getElementById("email").valueOf,
+            subject : document.getElementById("subject").valueOf,
+            message : document.getElementById("message").valueOf,
+
+            }
+            emailjs.send("service_k9vxeov","template_h377ogj",parms)
+        }

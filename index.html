@@ -5,6 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Yubraj Tamang</title>
     <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- email -->
+     <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init({
+        publicKey: "FN4XDb23Wd64RjYz_",
+      });
+   })();
+</script>
+
 </head>
 <body>
     <!-- Grid Background -->
@@ -267,14 +280,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="post" class="contact-form" >
+                        <input type="hidden" name="access_key" value="6420a30e-1f9d-41a0-9d9f-e0e01bad02d0">   
+
                         <div class="form-group">
                             <label for="name">Name</label>
-                            <input type="text" id="name" class="form-control" placeholder="Your Name">
+                            <input type="text" id="name" class="form-control" placeholder="Your Name" required>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="email" id="email" class="form-control" placeholder="Your Email">
+                            <input type="email" id="email" class="form-control" placeholder="Your Email" required>
                         </div>
                         <div class="form-group">
                             <label for="subject">Subject</label>
@@ -282,10 +297,10 @@
                         </div>
                         <div class="form-group">
                             <label for="message">Message</label>
-                            <textarea id="message" class="form-control" placeholder="Your Message"></textarea>
+                            <textarea id="message" class="form-control" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="submit-btn">Send Message</button>
-                    </div>
+                        <button type="submit" class="submit-btn" onclick="sendMail()">Send Message</button>
+                    </form>
                 </div>
             </div>
         </section>
