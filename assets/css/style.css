@@ -452,7 +452,24 @@
             text-align: center;
             border-radius: 6px;
         }
-
+        /* view more */
+        .center-box{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .view-more{
+            margin-top: 40px;
+            height: 50px;
+            width: 100;
+            padding: 10px;
+            text-align: center;
+        }
+        .view-more:hover{
+            color: var(--neon-pink);
+            text-shadow: 0 0 5px var(--neon-pink);
+            cursor: pointer;
+        }
         .project-link:hover {
             color: var(--neon-pink);
             text-shadow: 0 0 5px var(--neon-pink);
@@ -805,5 +822,28 @@
             }
         }
 
+/* project more */
 
-        
+        /* back to home */
+        .center-box-back{
+            display: flex;
+            align-items: center;
+            justify-content: left;
+        }
+        .back-home{
+            height: 50px;
+            width: 170px;
+            text-align: center;
+            margin-bottom: 40px;
+            padding: 0;
+        }
+        .back-home:hover{
+            color: var(--neon-pink);
+            text-shadow: 0 0 5px var(--neon-pink);
+            cursor: pointer;
+        }
+
+        .arrow{
+            font-size: 30px;
+            text-align: center;
+        }
