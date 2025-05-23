@@ -447,6 +447,10 @@
             color: var(--neon-blue);
             font-weight: bold;
             transition: var(--transition);
+            border-style: solid;
+            padding: 6px;
+            text-align: center;
+            border-radius: 6px;
         }
 
         .project-link:hover {
